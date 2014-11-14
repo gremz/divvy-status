@@ -4,7 +4,7 @@ require 'net/http'
 require 'json'
 
 get '/' do 
-  erb "Hello Divvy User"
+  send_file 'public/index.html'
 end
 
 get '/getData' do
